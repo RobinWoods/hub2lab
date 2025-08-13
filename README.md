@@ -25,14 +25,14 @@ This tool is particularly useful for:
 ### Install from PyPI
 
 ```bash
-pip install hub2lab
+pip install hub_to_lab
 ```
 
 ### Install from source
 
 ```bash
-git clone https://github.com/RobinWoods/hub2lab.git
-cd hub2lab
+git clone https://github.com/RobinWoods/hub_to_lab.git
+cd hub_to_lab
 pip install -e .
 ```
 
@@ -41,7 +41,7 @@ pip install -e .
 Run the tool from the command line:
 
 ```bash
-hub2lab
+hub_to_lab
 ```
 
 The tool will prompt you for:

@@ -3,12 +3,12 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "hub2lab"
+name = "hub_to_lab"
 version = "1.0.0"
 description = "Copy a Github public repository to a Gitlab self-hosted project"
 authors = ["RobinWoods"]
 license = "MIT"
-packages = [{include = "hub2lab"}]
+packages = [{include = "hub_to_lab"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -23,7 +23,7 @@ pytest = ">=7.0.0"
 pytest-mock = ">=3.10.0"
 
 [tool.poetry.scripts]
-hub2lab = "hub2lab.cli:main"
+hub_to_lab = "hub_to_lab.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

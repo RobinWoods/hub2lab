@@ -2,11 +2,11 @@ import os
 
 from dotenv import load_dotenv
 
-from hub2lab.check import check_config_variables
-from hub2lab.config import update_env_variable
-from hub2lab.github import clone_github_repo
-from hub2lab.gitlab import get_or_create_gitlab_project
-from hub2lab.gitops import push_to_gitlab
+from hub_to_lab.check import check_config_variables
+from hub_to_lab.config import update_env_variable
+from hub_to_lab.github import clone_github_repo
+from hub_to_lab.gitlab import get_or_create_gitlab_project
+from hub_to_lab.gitops import push_to_gitlab
 from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn, TimeElapsedColumn
 import typer
 
