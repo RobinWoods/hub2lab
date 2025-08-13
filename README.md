@@ -25,7 +25,7 @@ This tool is particularly useful for:
 ### Install from PyPI
 
 ```bash
-pip install hub_to_lab
+pipx install hub_to_lab
 ```
 
 ### Install from source

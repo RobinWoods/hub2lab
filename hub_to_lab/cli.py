@@ -1,7 +1,5 @@
 import os
 
-from dotenv import load_dotenv
-
 from hub_to_lab.check import check_config_variables
 from hub_to_lab.config import update_env_variable
 from hub_to_lab.github import clone_github_repo
@@ -14,8 +12,6 @@ app = typer.Typer()
 
 @app.command()
 def main():
-    ENV_FILE = ".env"
-    load_dotenv(ENV_FILE)
 
     config = {
         "GITHUB_REPO": "Name of the GitHub repository (ex: torvalds/linux)",
