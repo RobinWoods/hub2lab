@@ -16,12 +16,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.8'
+        python-version: '3.9'
 
     - name: Install Poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python3 -
-        echo "$HOME/.local/bin" >> $GITHUB_PATH
+      uses: abatilo/actions-poetry@v2
+      with:
+        poetry-version: 2.1.4
 
     - name: Configure Poetry
       run: |

@@ -11,7 +11,7 @@ license = "MIT"
 packages = [{include = "hub2lab"}]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 GitPython = "*"
 rich = "*"
 python-dotenv = "*"
