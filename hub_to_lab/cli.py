@@ -23,7 +23,7 @@ def main():
         "GITLAB_URL": "GitLab URL",
         "GITLAB_TOKEN": "GitLab TOKEN (PAT)",
         "GITLAB_USERNAME": "GitLab Username",
-        "GITLAB_GROUP": "GitLab Group name (optional, leave empty for personal namespace)"
+        "GITLAB_GROUP": "GitLab Group name (use '-' for personal namespace or leave if precedent group was your personal namespace)",
     }
 
 
@@ -43,7 +43,7 @@ def main():
 
     remote_url = project["http_url_to_repo"]
 
-    remote_url = remote_url.replace("https://", f"https://{gitlab_user}:{gitlab_token}@")
+    remote_url = remote_url.replace("https://", f"https://oauth2:{gitlab_token}@")
 
     with Progress(
         SpinnerColumn(),
