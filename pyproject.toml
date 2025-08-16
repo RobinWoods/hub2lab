@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "hub_to_lab"
-version = "1.1.1"
+version = "1.1.2"
 description = "Copy a Github public repository to a Gitlab self-hosted project"
 authors = ["RobinWoods"]
 license = "MIT"
